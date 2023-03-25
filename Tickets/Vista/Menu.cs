@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Vista
@@ -15,6 +8,18 @@ namespace Vista
         public Menu()
         {
             InitializeComponent();
+        }
+
+        private void NuevoTicketsToolStripButton_Click(object sender, EventArgs e)
+        {
+            TicketsForm ticketsform = new TicketsForm();
+            ticketsform.MdiParent = this;
+            ticketsform.Show();
+        }
+
+        private void backStageButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
