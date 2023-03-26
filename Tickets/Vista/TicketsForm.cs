@@ -38,6 +38,8 @@ namespace Vista
             if (e.KeyChar == (char)Keys.Enter && !string.IsNullOrEmpty(PrecioTextBox.Text))
             {
                 DetalleTicket detalle = new DetalleTicket();
+                detalle.DescripcionSolicitud = DescripcionSolicitudTextBox.Text;
+                detalle.DescripcionRespuesta = DescripcionRespuestaTextBox.Text;
                 detalle.TipoSoporte = TipoSoporteComboBox.Text;
                 detalle.Precio = Convert.ToDecimal(PrecioTextBox.Text);
 
@@ -104,8 +106,6 @@ namespace Vista
             miticket.Fecha = FechaDateTimePicker.Value;
             miticket.CodigoUsuario = System.Threading.Thread.CurrentPrincipal.Identity.Name;
             miticket.IdentidadCliente = miCliente.Identidad;
-            miticket.DescripcionSolicitud = DescripcionSolicitudTextBox.Text;
-            miticket.DescripcionRespuesta = DescripcionRespuestaTextBox.Text;
             miticket.ISV = isv;
             miticket.Descuento = descuento;
             miticket.Total = totalAPagar;

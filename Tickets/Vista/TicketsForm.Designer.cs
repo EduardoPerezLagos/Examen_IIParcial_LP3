@@ -195,7 +195,7 @@
             "Mantenimiento Predictivo",
             "Instalación de Software",
             "Servicio al Cliente",
-            ""});
+            "Cambio de Componente"});
             this.TipoSoporteComboBox.Location = new System.Drawing.Point(102, 79);
             this.TipoSoporteComboBox.Name = "TipoSoporteComboBox";
             this.TipoSoporteComboBox.Size = new System.Drawing.Size(204, 24);
